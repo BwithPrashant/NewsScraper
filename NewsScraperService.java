@@ -216,9 +216,29 @@ public class NewsScraperService
 	public static void main(String[] args) throws IOException {
 		
 			NewsScraperService instance_ = new NewsScraperService();
-			instance_.displayAuthor();
-		//	instance_.searchArticleBasedOnAuthorName("aditya");
-		//	instance_.SearchArticleBasedOnTitleAndDescription("Hello");
+			Scanner sc = new Scanner(System.in);
+			System.out.println("Select an option");
+			System.out.println("1.Display Author\n2.Search Article by author name\n"
+					+ "3.Diplay article based on title and description");
+			int input = sc.nextInt();
+			switch(input)
+			{
+				case 1: instance_.displayAuthor();
+						break;
+				case 2: System.out.println("Enter author name");
+						String author_name = sc.next();
+						instance_.searchArticleBasedOnAuthorName(author_name);
+						//instance_.searchArticleBasedOnAuthorName("aditya");
+						break;
+				case 3: System.out.println("Enter Keyword");
+						String keyword = sc.next();
+						instance_.SearchArticleBasedOnTitleAndDescription(keyword);
+						//instance_.SearchArticleBasedOnTitleAndDescription("Hello");
+						break;
+				default: 
+						System.out.println("Invalid input");
+						break;
+			}
 	   }
 	
 }
