@@ -68,4 +68,9 @@ path - https://www.thehindu.com/todays-paper/tp-sports/say-hello-to-kochi-blue-s
 Title - 16JANERSPSHellG1T59C5C33jpgjpg  
 Description - Superintendent of Police S. Sakthi Ganesan launching the ‘Hello Seniors’ project in Erode on Tuesday. HANDOUT_E_MAIL  
 path - https://www.thehindu.com/todays-paper/tp-national/tp-tamilnadu/lhihk5/article26009206.ece  
-[More results ...]
+[More results ...]  
+
+## API Used  
+ - displayAuthor() //List all authors  
+ - searchArticleBasedOnAuthorName(var authorName) //List all articles of an author , if multiple author first displays all the names , then select the desired author.  
+ - SearchArticleBasedOnTitleAndDescription(var authorName) //List all articles based on title and description
